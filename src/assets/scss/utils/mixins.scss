@@ -1,0 +1,23 @@
+@mixin mediaQueriesFor($size) {
+  @if $size == phone-size {
+    @media (max-width: $screen-xs-min) {
+      @content;
+    }
+  } @else if $size == tablet-normal {
+    @media (max-width: $screen-sm-min) {
+      @content;
+    }
+  } @else if $size == tab-m {
+    @media (max-width: $screen-md-min) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (max-width: $screen-lg-min) {
+      @content;
+    }
+  } @else if $size == desktop-only {
+    @media (min-width: $screen-lg-min) {
+      @content;
+    }
+  }
+}

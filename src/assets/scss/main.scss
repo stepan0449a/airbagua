@@ -1,0 +1,111 @@
+@import "./modules/bootstrap";
+@import "./modules/mmenu";
+@import "utils/mixins";
+@import "_inc/variables";
+
+
+.faq {
+  .booking-field {
+    width: 100%;
+    a {
+      width: 230px;
+      display: inline-block;
+      margin: 0;
+      height: auto;
+      line-height: normal;
+      border: 2px solid #d3b274;
+      box-shadow: none;
+      border-radius: 1px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      white-space: nowrap;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #fff;
+      color: #444;
+      transition: 0.18s background-color ease, color 0.18s ease, 0.18s border-color ease;
+    }
+    a:hover {
+      border-color: #444;
+      text-decoration: none;
+      color: #d3b274;
+    }
+  }
+}
+
+.faq-accordion {
+
+  margin-top: 91px;
+  @media ( max-width: $screen-xs-max ) {
+    margin-top: 15px;
+  }
+  .faq-accordion {
+
+
+    &__item {
+      cursor: pointer;
+      margin: 10px;
+      border-width: 2px;
+    }
+
+    &__title {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      h4 {
+        margin: 10px auto;
+        text-align: center;
+      }
+    }
+
+    &__text p {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+
+  }
+
+  .accordion-unactive {
+    transition: all .5s;
+    border: 2px solid lightgray;
+
+    &-text {
+      padding-left: 10px;
+      padding-right: 10px;
+      transition: all .2s;
+      max-height: 0;
+      overflow: hidden;
+    }
+  }
+
+  .accordion-active {
+    max-height: 100% !important;
+    border: 2px solid $primary-color;
+
+    &-text {
+      transition: all .2s;
+      padding-top: 20px;
+      max-height: 250px !important;
+      padding-bottom: 20px;
+      @include mediaQueriesFor(tablet-normal) {
+        padding-top: 15px;
+      }
+    }
+
+    .faq-accordion__arrow {
+      background-color: $primary-color;
+
+      &:before {
+        top: 6px;
+        color: white;
+        filter: invert(1);
+        transform: rotate(270deg);
+      }
+    }
+  }
+}
