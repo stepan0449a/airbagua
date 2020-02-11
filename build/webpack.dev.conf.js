@@ -26,7 +26,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       host: 'localhost',
       port: 4000,
       // server: { baseDir: ['dist'] },
-      proxy: 'localhost:80',
+      proxy: 'localhost:5050',
 
     }),
   ]
