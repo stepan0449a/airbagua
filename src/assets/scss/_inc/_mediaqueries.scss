@@ -1,7 +1,7 @@
 
 
 // MD Настольные (≥1199px)
-@media ( max-width: $screen-md-max ) {
+@media ( max-width: 1199px) {
 
 
 	
@@ -9,17 +9,27 @@
 }
 
 // SM Планшеты (≥991px)
-@media ( max-width: $screen-sm-max ) {
+@media ( max-width: 990px ) {
 
 
 
 } /* end sm block media */
 
+@media (max-width: 600px) {
+    .single-features {
+        margin: 10px;
+        padding: 50px 10px;
+    }
+    .single-features h3 {
+        font-size: 14px;
+    }
+}
+
 
 // >= 767px xs mobile
-@media ( max-width: $screen-xs-max ) {
+@media ( max-width: 767px ) {
 
-} xsmall mobile
+}// xsmall mobile
 @media ( max-width: 550px ) {
 
 }
