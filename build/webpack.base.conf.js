@@ -1,11 +1,10 @@
 const webpack = require("webpack");
 
-const path = require('path')
-const fs = require('fs')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const {VueLoaderPlugin} = require('vue-loader')
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const {VueLoaderPlugin} = require('vue-loader');
 
 // Main const
 // see more: https://github.com/vedees/webpack-template/blob/master/README.md#main-const
@@ -22,12 +21,13 @@ const PATHS = {
 // const PAGESPhP = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.php'));
 
 //function for build dirname to implement pretty url
-function buildPrettyUrl(nameFile) {
-    //cut everything after point
-    return nameFile.split('.')[0];
-}
+// function buildPrettyUrl(nameFile) {
+//     //cut everything after point
+//     return nameFile.split('.')[0];
+// }
 
 
+// noinspection WebpackConfigHighlighting
 module.exports = {
     // BASE config
     externals: {
@@ -150,7 +150,7 @@ module.exports = {
             {from: `${PATHS.src}/components`, to: `${PATHS.dist}/components`},
             {from: `${PATHS.src}/composer.json`, to: `${PATHS.dist}/composer.json`},
             {from: `${PATHS.src}/composer.lock`, to: `${PATHS.dist}/composer.lock`},
-            //{from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
+            {from: `${PATHS.src}/static`, to: `${PATHS.dist}`},
             //{from: `${PATHS.src}/${PATHS.assets}pages`, to: `${PATHS.assets}pages`},
         ]),
 
@@ -179,7 +179,7 @@ module.exports = {
 
 
     ],
-}
+};
 
 // const imagemin = require('imagemin');
 // const imageminPngquant = require('imagemin-pngquant');
