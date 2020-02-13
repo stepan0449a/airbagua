@@ -5,37 +5,43 @@
 a{
   cursor: pointer;
 }
+section {
+  padding: 0 20px;
+}
 .button_up {
-  width: 10%;
-  margin-left: -5%;
+  cursor: n-resize;
+  width: 100%;
+
   text-align: center;
   position: absolute;
   top: 0;
-  left: 50%;
+
   color: white;
   z-index: 2;
-  // border: 1px solid red;
   padding: 20px ;
 }
 
 .button_down {
+  cursor: s-resize;
   text-align: center;
-  width: 10%;
+  width: 100%;
   // border: 1px solid red;
   position: absolute;
   color: white;
   bottom: 0;
-  left:50%;
-  margin-left: -5%;
+
+
   z-index: 2;
   padding: 20px;
 }
 
-
 .welcome {
+  
 
-  background-color: #000;
+  background: #0a0a0a url("/assets/images/tesla.png") no-repeat;
+  background-size: 100%;
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   .header_sub_tittle {
@@ -49,21 +55,107 @@ a{
   }
 
   .logo {
+
+    position: absolute;
+    top: 100px;
+    left: 20px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     grid-column-start: 2;
-    grid-row-start: 2;
-    font-size: 20px;
+    grid-row-start: 1;
+    font-size: 70px;
+
   }
+  .logo span:before {
+    position: absolute;
+    content: '';
+    color: white;
+    top: 100px;
+    left: 35px;
+    width: 100%;
+    height: 3px;
+    margin-left: -30px;
+    background-color: #fff;
+  }
+
 }
 
 
 .airbagua_service {
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: rgb(10,10,10);
+  background: -moz-linear-gradient(180deg, rgba(10,10,10,1) 17%, rgba(59,59,59,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(10,10,10,1) 17%, rgba(59,59,59,1) 100%);
+  background: linear-gradient(180deg, rgba(10,10,10,1) 17%, rgba(59,59,59,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a0a0a",endColorstr="#3b3b3b",GradientType=1);
+  h2 {
+    position: absolute;
+    text-align: center;
+    margin-top: 80px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  aside {
+    p {
+      text-shadow: 0px -1px 20px #000, 0px 1px 15px #000 ,0px 1px 10px #000, 0px 1px 5px #000, 0px 1px 2px #000;
+    }
+    top: 10%;
+    right: 0;
+    color: white;
+    width: 40%;
+    position: absolute;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+  .image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #textType {
+
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+    text-shadow: 0px -1px 20px #000, 0px 1px 15px #000;
+    font-size: 2em;
+  }
 
 }
+.owl-carousel {
 
-
+  .card_name {
+    font-size: medium;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  position: absolute;
+  bottom: 0;
+ .item {
+   opacity: .9;
+   display: grid;
+   grid-template-rows: 100%;
+   grid-template-columns: 55% 45%;
+   margin: 0 10px;
+   background-color: #456876eb;
+   border-radius: 20px;
+    height: 200px;
+   box-shadow: 10x 10px 1px 10px black;
+   color: white;
+   img {
+     width: 100%;
+     grid-row-start: 1;
+   }
+  }
+}
 
