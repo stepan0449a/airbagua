@@ -1,11 +1,9 @@
 User-agent: *
-Disallow: /*?*
-Sitemap: http://localhost:8081/sitemap.xml
+Disallow: /
 
 User-agent: Goolebot
-Disallow: /*?*
+Disallow: /
 
 User-agent: Yandex
 Disallow: /*?*
 Host: http://localhost:8081/
-Sitemap: http://localhost:8081/sitemap.xml
