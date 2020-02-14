@@ -169,8 +169,8 @@ module.exports = {
 
 
         new HtmlWebpackPlugin({
-            template: `${PATHS.src}/index.html`,
-            filename: `./index.html`
+            template: `${PATHS.src}/index.php`,
+            filename: `./index.php`
         }),
         new HtmlWebpackPlugin({
             template: `${PATHS.src}/static/.htaccess`,

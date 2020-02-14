@@ -31,22 +31,26 @@
     <link rel="apple-touch-icon"
           sizes="180x180"
           href="assets/images/icons/favicon_io/apple-touch-icon.png">
-
+        <script src="assets/js/modernizr.custom.js"></script>
+        <script src="assets/js/classie.js"></script>
 </head>
 
 <body>
 <div id="main">
 
     <section class="welcome" >
-        <a class="button_up"></a>
-        <a class="button_down"></a>
-        <div class="logo">
-            <div class="line"></div>
-            <span>AIRBAGUA</span>
+        <div class="container_menu" id="container_menu">
+            <a class="button_up"></a>
+            <a class="button_down"></a>
+            <div class="logo">
+                <div class="line"></div>
+                <span>AIRBAGUA</span>
 
-            
+                
+            </div>
+            <h1 class="header_sub_tittle">Реставрация подушек безопасности</h1>
         </div>
-        <h1 class="header_sub_tittle">Реставрация подушек безопасности</h1>
+        <?php include_once('components/components_ru_menu.html')?>
     </section>
     <section class="airbagua_service">
         <video class="image" autoplay loop>
@@ -113,7 +117,7 @@
 
         </div>
 
-
+        
     </section>
     <section>
         <p class="odometer"></p>
@@ -123,7 +127,6 @@
     <section>
         <a class="button_up"></a>
         <a class="button_down"></a>
-
 
 </section>
 </div>

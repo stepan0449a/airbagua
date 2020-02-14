@@ -297,7 +297,8 @@ body {
     letter-spacing: 1px;
     font-weight: 700;
     line-height: 80px;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .morph-button.open>button {
@@ -467,6 +468,9 @@ body {
 }
 
 @media screen and (max-width:400px) {
+    .morph-button>button {
+        border-radius: 0;
+    }
     .content-style-sidebar .icon-close {
         right: none;
         left: 0;

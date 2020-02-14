@@ -1,148 +1,88 @@
-<!DOCTYPE html>
-<!--[if IE 8]>
-<html class="no-js lt-ie9"
-      lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"
-      lang="en-US"> <!--<![endif]-->
-
-<head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Пансионат - Верона</title>
-    <meta name="description"
-          content="">
-    <meta name="author"
-          content="">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
-
-
-    <link rel="" href="">
-    <link rel="shortcut icon"
-          type="image/x-icon"
-          href="assets/images/icons/favicon_io/favicon.ico">
-    <link rel="apple-touch-icon"
-          href="#">
-    <link rel="apple-touch-icon"
-          sizes="72x72"
-          href="#">
-    <link rel="apple-touch-icon"
-          sizes="180x180"
-          href="assets/images/icons/favicon_io/apple-touch-icon.png">
-
-<link href="assets/css/vendors.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>
-
-<body>
-<div id="main">
-
-    <section class="welcome" >
-        <a class="button_up"></a>
-        <a class="button_down"></a>
-        <div class="logo">
-            <div class="line"></div>
-            <span>AIRBAGUA</span>
-
-            
-        </div>
-        <h1 class="header_sub_tittle">Реставрация подушек безопасности</h1>
-    </section>
-    <section class="airbagua_service">
-        <video class="image" autoplay loop>
-            <source src="/assets/video/vw.mp4">
-        </video>
-
-        <aside>
-
-            <p>Мы являемся одной из первых компаний по ремонту модулей и ремней безопасности SRS в Украине и имеем опыт
-                работы со всеми марками автомобилей.
-                Когда мы ремонтируем ваш модуль, подушки безопасности, качество изготовления не имеет себе равных.
-
-            </p>
-
-        </aside>
-        <p id="textType"></p>
-        <div class="slogan">Мы не можем подвести</div>
-        <a class="button_up"></a>
-        <a class="button_down"></a>
-        <div class="owl-carousel">
-            <div class="item">
-                <div class="card_name">
-                    <h3>Ремни безопасности</h3>
-                </div>
-                <img src="/assets/images/img1.png" alt="">
-
-            </div>
-            <div class="item">
-                <div class="card_name">
-                    <h3>Реставрация торпедо</h3>
-                </div>
-                <img src="/assets/images/img1.png" alt="">
-
-            </div>
-            <div class="item">
-                <div class="card_name">
-                    <h3>Ремонт шторки</h3>
-                </div>
-                <img src="/assets/images/img1.png" alt="">
-
-            </div>
-            <div class="item">
-                <div class="card_name">
-                    <h3>Замена пиропатрона</h3>
-                </div>
-                <img src="/assets/images/img1.png" alt="">
-
-            </div>
-            <div class="item">
-                <div class="card_name">
-                    <h3>Замена значка подушки руля</h3>
-                </div>
-                <img src="/assets/images/img1.png" alt="">
-
-            </div>
-            <div class="item">
-                <div class="card_name">
-                    <h3>Ремонт сидение</h3>
-                </div>
-                <img src="/assets/images/img1.png" alt="">
-
-            </div>
-
-
-        </div>
-
-
-    </section>
-    <section>
-        <p class="odometer"></p>
-        <a class="button_up"></a>
-        <a class="button_down"></a>
-    </section>
-    <section>
-        <a class="button_up"></a>
-        <a class="button_down"></a>
-
-
-</section>
-</div>
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTnL4HenV5LsOefdwtyN7qmU78X96h99g"></script>
-<script src="assets/js/type.min.js"></script>
-<script>
-    setTimeout(function () {
-        new TypeIt('#textType', {
-            strings: ["Реставрация ремней безопасности", "Подушки безопасности коленей", "Реставрация торпедо", "Реставрация руля", "Наша команда не может подвести."],
-            speed: 70,
-            breakLines: false,
-            waitUntilVisible: false,
-            loop: true
-        }).go();
-    }, 1000);
-
-</script>
-
-<script type="text/javascript" src="assets/js/vendors.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
-</html>
+<head><link href="assets/css/vendors.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/html-webpack-plugin/lib/loader.js):
+  Error: ENOENT: no such file or directory, open '/home/anton/anton/airbagua/src/index.html':
+  Error: ENOENT: no such file or directory, open '/home/anton/anton/airbagua/src/index.html'
+  
+  - compiler.js:79 childCompiler.runAsChild
+    [airbagua]/[html-webpack-plugin]/lib/compiler.js:79:16
+  
+  - Compiler.js:343 compile
+    [airbagua]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:681 hooks.afterCompile.callAsync.err
+    [airbagua]/[webpack]/lib/Compiler.js:681:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:678 compilation.seal.err
+    [airbagua]/[webpack]/lib/Compiler.js:678:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1423 hooks.optimizeAssets.callAsync.err
+    [airbagua]/[webpack]/lib/Compilation.js:1423:35
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1414 hooks.optimizeChunkAssets.callAsync.err
+    [airbagua]/[webpack]/lib/Compilation.js:1414:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1409 hooks.additionalAssets.callAsync.err
+    [airbagua]/[webpack]/lib/Compilation.js:1409:36
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1405 hooks.optimizeTree.callAsync.err
+    [airbagua]/[webpack]/lib/Compilation.js:1405:32
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1342 Compilation.seal
+    [airbagua]/[webpack]/lib/Compilation.js:1342:27
+  
+  - Compiler.js:675 compilation.finish.err
+    [airbagua]/[webpack]/lib/Compiler.js:675:18
+  
+  - Compilation.js:1261 hooks.finishModules.callAsync.err
+    [airbagua]/[webpack]/lib/Compilation.js:1261:4
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [airbagua]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1253 Compilation.finish
+    [airbagua]/[webpack]/lib/Compilation.js:1253:28
+  
+  - Compiler.js:672 hooks.make.callAsync.err
+    [airbagua]/[webpack]/lib/Compiler.js:672:17
+  
+  
+  - Compilation.js:1185 _addModuleChain
+    [airbagua]/[webpack]/lib/Compilation.js:1185:12
+  
+  - Compilation.js:1097 processModuleDependencies.err
+    [airbagua]/[webpack]/lib/Compilation.js:1097:9
+  
+  - next_tick.js:131 _combinedTickCallback
+    internal/process/next_tick.js:131:7
+  
+  - next_tick.js:180 process._tickCallback
+    internal/process/next_tick.js:180:9
+  
+</pre><script type="text/javascript" src="assets/js/vendors.js"></script><script type="text/javascript" src="assets/js/app.js"></script>

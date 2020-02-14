@@ -12,6 +12,85 @@ import 'owl.carousel';
 import './assets/scss/modules/onepage-scroll.css'
 import './assets/scss/main.scss'
 
+//dsdsadasdasd
+
+
+import './js/classie'
+import './js/uiMorphingButton_fixed'
+//adasdasdasdasd
+
+(function() {
+    var docElem = window.document.documentElement,
+        didScroll, scrollPosition,
+        container = document.getElementById('container_menu');
+
+    // trick to prevent scrolling when opening/closing button
+    function noScrollFn() {
+        window.scrollTo(scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0);
+    }
+
+    function noScroll() {
+        window.removeEventListener('scroll', scrollHandler);
+        window.addEventListener('scroll', noScrollFn);
+    }
+
+    function scrollFn() {
+        window.addEventListener('scroll', scrollHandler);
+    }
+
+    function canScroll() {
+        window.removeEventListener('scroll', noScrollFn);
+        scrollFn();
+    }
+
+    function scrollHandler() {
+        if (!didScroll) {
+            didScroll = true;
+            setTimeout(function() { scrollPage(); }, 60);
+        }
+    };
+
+    function scrollPage() {
+        scrollPosition = { x: window.pageXOffset || docElem.scrollLeft, y: window.pageYOffset || docElem.scrollTop };
+        didScroll = false;
+    };
+
+    scrollFn();
+
+    var el = document.querySelector('.morph-button');
+
+    new UIMorphingButton(el, {
+        closeEl: '.icon-close',
+        onBeforeOpen: function() {
+            // don't allow to scroll
+            noScroll();
+            // push main container
+            classie.addClass(container, 'pushed');
+        },
+        onAfterOpen: function() {
+            // can scroll again
+            canScroll();
+            // add scroll class to main el
+            classie.addClass(el, 'scroll');
+        },
+        onBeforeClose: function() {
+            // remove scroll class from main el
+            classie.removeClass(el, 'scroll');
+            // don't allow to scroll
+            noScroll();
+            // push back main container
+            classie.removeClass(container, 'pushed');
+        },
+        onAfterClose: function() {
+            // can scroll again
+            canScroll();
+        }
+    });
+})();
+
+
+//asdasdadasdas
+
 $("#main").onepage_scroll({
     easing: "ease",
     pagination: true,
@@ -28,14 +107,42 @@ $("#main").onepage_scroll({
 });
 
 
+
 $(".button_up").click(function(){
     $("#main").moveUp();
 });``
 $(".button_down").click(function(){
     $("#main").moveDown();
 });
-
+$(".menu_1").click(function(){
+    $(".main").moveTo(1);
+});
+$(".menu_2").click(function(){
+    $(".main").moveTo(2);
+});
+$(".menu_3").click(function(){
+    $(".main").moveTo(3);
+});
+$(".menu_4").click(function(){
+    $(".main").moveTo(4);
+});
+$(".menu_5").click(function(){
+    $(".main").moveTo(5);
+});
+$(".menu_6").click(function(){
+    $(".main").moveTo(6);
+});
+$(".menu_7").click(function(){
+    $(".main").moveTo(7);
+});
+$(".menu_8").click(function(){
+    $(".main").moveTo(8);
+});
+$(".menu_9").click(function(){
+    $(".main").moveTo(9);
+});
 $(document).ready(function(){
+    
     $(".owl-carousel").owlCarousel({
         loop: true,
     });
