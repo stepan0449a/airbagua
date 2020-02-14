@@ -20,17 +20,10 @@
 
 
     <link rel="" href="">
-    <link rel="shortcut icon"
-          type="image/x-icon"
-          href="assets/images/icons/favicon_io/favicon.ico">
-    <link rel="apple-touch-icon"
-          href="#">
-    <link rel="apple-touch-icon"
-          sizes="72x72"
-          href="#">
-    <link rel="apple-touch-icon"
-          sizes="180x180"
-          href="assets/images/icons/favicon_io/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
         <script src="assets/js/modernizr.custom.js"></script>
         <script src="assets/js/classie.js"></script>
 </head>
