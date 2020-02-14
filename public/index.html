@@ -18,7 +18,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
 
-    
+
     <link rel="" href="">
     <link rel="shortcut icon"
           type="image/x-icon"
@@ -31,35 +31,118 @@
     <link rel="apple-touch-icon"
           sizes="180x180"
           href="assets/images/icons/favicon_io/apple-touch-icon.png">
-    
+
 <link href="assets/css/vendors.css" rel="stylesheet"><link href="assets/css/app.css" rel="stylesheet"></head>
 
 <body>
-  <div id="main">
-      
-    <section class="welcome">
-    <a class="button_up">up</a>
-      <a class="button_down">down</a>
-        <div class="logo"><span>AIRBAGUA</span></div>
+<div id="main">
+
+    <section class="welcome" >
+        <a class="button_up"></a>
+        <a class="button_down"></a>
+        <div class="logo">
+            <div class="line"></div>
+            <span>AIRBAGUA</span>
+
+            
+        </div>
         <h1 class="header_sub_tittle">Реставрация подушек безопасности</h1>
     </section>
     <section class="airbagua_service">
-      <a class="button_up">up</a>
-      <a class="button_down">down</a>
+        <video class="image" autoplay loop>
+            <source src="/assets/video/vw.mp4">
+        </video>
+
+        <aside>
+
+            <p>Мы являемся одной из первых компаний по ремонту модулей и ремней безопасности SRS в Украине и имеем опыт
+                работы со всеми марками автомобилей.
+                Когда мы ремонтируем ваш модуль, подушки безопасности, качество изготовления не имеет себе равных.
+
+            </p>
+
+        </aside>
+        <p id="textType"></p>
+        <div class="slogan">Мы не можем подвести</div>
+        <a class="button_up"></a>
+        <a class="button_down"></a>
+        <div class="owl-carousel">
+            <div class="item">
+                <div class="card_name">
+                    <h3>Ремни безопасности</h3>
+                </div>
+                <img src="/assets/images/img1.png" alt="">
+
+            </div>
+            <div class="item">
+                <div class="card_name">
+                    <h3>Реставрация торпедо</h3>
+                </div>
+                <img src="/assets/images/img1.png" alt="">
+
+            </div>
+            <div class="item">
+                <div class="card_name">
+                    <h3>Ремонт шторки</h3>
+                </div>
+                <img src="/assets/images/img1.png" alt="">
+
+            </div>
+            <div class="item">
+                <div class="card_name">
+                    <h3>Замена пиропатрона</h3>
+                </div>
+                <img src="/assets/images/img1.png" alt="">
+
+            </div>
+            <div class="item">
+                <div class="card_name">
+                    <h3>Замена значка подушки руля</h3>
+                </div>
+                <img src="/assets/images/img1.png" alt="">
+
+            </div>
+            <div class="item">
+                <div class="card_name">
+                    <h3>Ремонт сидение</h3>
+                </div>
+                <img src="/assets/images/img1.png" alt="">
+
+            </div>
+
+
+        </div>
 
 
     </section>
     <section>
-    <a class="button_up">up</a>
-      <a class="button_down">down</a>
+        <p class="odometer"></p>
+        <a class="button_up"></a>
+        <a class="button_down"></a>
     </section>
     <section>
-    <a class="button_up">up</a>
-      <a class="button_down">down</a>
-    </section>
-  </div>
+        <a class="button_up"></a>
+        <a class="button_down"></a>
 
-    
+
+</section>
+</div>
+
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTnL4HenV5LsOefdwtyN7qmU78X96h99g"></script>
+<script src="assets/js/type.min.js"></script>
+<script>
+    setTimeout(function () {
+        new TypeIt('#textType', {
+            strings: ["Реставрация ремней безопасности", "Подушки безопасности коленей", "Реставрация торпедо", "Реставрация руля", "Наша команда не может подвести."],
+            speed: 70,
+            breakLines: false,
+            waitUntilVisible: false,
+            loop: true
+        }).go();
+    }, 1000);
+
+</script>
+
 <script type="text/javascript" src="assets/js/vendors.js"></script><script type="text/javascript" src="assets/js/app.js"></script></body>
 </html>

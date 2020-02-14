@@ -1,9 +1,16 @@
 @import "./modules/bootstrap";
 @import "./_inc/mediaqueries";
 @import "./_inc/slider";
+@import "./_inc/menu";
 
-a{
+a, button{
   cursor: pointer;
+  color: #553445;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus {
+  color: #e75854;
 }
 section {
   padding: 0 20px;
