@@ -151,6 +151,7 @@ module.exports = {
             {from: `${PATHS.src}/composer.json`, to: `${PATHS.dist}/composer.json`},
             {from: `${PATHS.src}/composer.lock`, to: `${PATHS.dist}/composer.lock`},
             {from: `${PATHS.src}/static`, to: `${PATHS.dist}`},
+            {from: `${PATHS.src}/assets/scss/fonts`, to: `${PATHS.dist}/assets/css/fonts`},
             //{from: `${PATHS.src}/${PATHS.assets}pages`, to: `${PATHS.assets}pages`},
         ]),
 
