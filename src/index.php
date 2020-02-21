@@ -33,6 +33,20 @@
 
     <section class="welcome" >
         <div class="container_menu" id="container_menu">
+            <div class="social">
+                <div class="item">
+                    <img src="assets/images/social/facebook.svg">
+                </div>
+                <div class="item">
+                    <img src="assets/images/social/youtube.svg">
+                </div>
+                <div class="item">
+                    <img src="assets/images/social/linkedin.svg">
+                </div>
+                <div class="item">
+                    <img src="assets/images/social/instagram.svg">
+                </div>
+            </div>
             <a class="button_up"></a>
             <a class="button_down"></a>
             <div class="logo">
